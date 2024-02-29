@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my Portfolio</title>
+    <!-- Link to the desired cursive font from Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia+Pro">
+    <style>
+        body, html {
+            position: relative;
+            margin: 0;
+            padding: 0;
+            background: white;
+            font-family: 'Sofia Pro', sans-serif;
+            justify-content: center;
+            align-items: center; 
+        }
+        .intro {
+            margin: 0 auto;
+            background: rgb(203, 250, 250);
+            padding: 20px;
+            text-align: center;
+        }
+        .intro p {
+            font-size: 28px;
+            font-family: 'Great Vibes', cursive;
+            font-weight: 600px;
+            padding: 20px;
+        }
+        .intro span{
+            font-family: 'Sofia Pro', sans-serif;
+            font-size: 25px;
+            padding: 10px;
+            border-left: 4px solid crimson;
+            border-right: 4px solid crimson;
+        }
+        .welcome {
+            margin:  20 auto;
+        }
+        .img-container {
+            width: 200px;
+            height: 200px;
+            border: none;
+            border-radius: 50%;
+            margin: 60px auto;
+            justify-content: center;
+        }
+        .img-container img {
+            background: rgb(229, 255, 255);
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+        
+        .welcome h1, .welcome p{
+            margin: 20px;
+            padding: 10px;
+            text-align: center;
+            margin: 0 auto;
+            width: 400px;
+        }
+    
+        .skills {
+            margin: 50px auto;
+            padding: 30px;
+        }
+        .skills h2, .welcome h1{
+            margin: 0 auto;
+            border-bottom: 4px solid black;
+            padding:20px;
+            width: 110px;
+        }
+        .design, .reading {
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+            width: 300;
+            display: flex;
+            margin: 0 auto;
+            margin: 50px;
+        }
+        .title {
+            display: block;
+            margin: 20px;
+            padding: 15px;
+        }
+        .contact h2 {
+            margin: 0 auto;
+            border-bottom: 4px solid black;
+            padding:20px;
+            width: 150px;
+        }
+        a {
+            text-decoration: none;
+        }
+        button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 140px;
+            margin:  0 auto;
+            background: crimson;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 700;
+            color: black;
+            padding: 10px;
+            border: none;
+        }
+        footer {
+            display: flex;
+            background-color: crimson;
+            margin-top: 30px;
+        }
+        .links {
+            display: flex;
+            margin: auto;
+            padding: 20px;
+        }
+        .links a {
+            color:  white;
+            font-weight: 600px;
+            padding: 20px;
+        }
+        footer p {
+            text-align: center;
+            justify-content: center;
+            margin: auto;
+            display: flex;
+            color: white;
+        }
+        /* Media query for mobile devices */
+        @media only screen and (max-width: 767px) {
+            body {
+                margin: auto;
+            }
+            .welcome p {
+                width: 360px;
+            }
+            .skills h2, .skills .welcome h1 {
+                padding: 10px;
+                width: auto;
+            }
+            .title {
+                margin: 10px;
+                padding: 10px;
+            }
+            .design, .reading {
+            padding: 10px;
+            width: 100%;
+            display: flex;
+            margin:40px auto;
+           
+        }
+            .design img, .reading img {
+                width: 200px;
+                height: 200px;
+            }
+            .intro{
+                width: 100%;
+            }
+            .links a {
+                padding: 5px;
+            }
+            footer {
+                padding: 20px;
+                width: 100%;
+            }
+            .contact {
+                margin: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="intro">
+        <p>I'm Inioluwa <br><span > a programmer </span></p>
+    </div>
+
+    <div class="welcome">
+        <div class="img-container">
+            <img src="../mypic.png" alt="my image">
+        </div>
+        <h1 style="color: crimson;">Hello</h1>
+        <br>
+        <p >I am a web developer. I love coding and I aspire to know more about tech. Programming is my hubby, I aspire to be a front-end web developer</p>
+    </div>
+
+    <section class="skills">
+        <h2 style="color: crimson;">My Skills</h2>
+        <div class="skill-container">
+            <div class="design">
+                <img src="./code.jpg" alt="a girl coding">
+                <div class="title">
+                    <h3 style="color: crimson;">Web design and Development</h3>
+                    <h4 >I developed interest in programming last two years. After my secondary education, I dived in to learn HTML, CSS and Javascript. I wanted to be able to create my own websites and game.</h4>
+                </div>
+            </div>
+
+            <div class="reading">
+                <img src="./read.jpeg" alt="a girl reading">
+                <div class="title">
+                    <h3 style="color: crimson;">I love reading</h3>
+                    <h4 >Reading has always been my forte to escape reality. I love the fact that one can gain a lot of knowledge from reading just a book. I read fiction, non-fiction, autobiography, myths, etc.</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="contact">
+        <h2 style="color: crimson;">Get in touch</h2>
+
+        <i><p style="text-align: center;"><span style="color: rgb(241, 110, 110); ">If you love reading as much as I do.</span></p></i>
+        <p style="padding-bottom: 40px; margin: 0 auto; justify-content: center;  width: 370px; font-weight: 400;">Love books as much as I do? Let's talk about some famous authors and their books while we code.</p>
+        <a href="https://wa.me/2349158934109"><button type="submit">CONTACT ME</button></a>
+    </div>
+    <footer>
+        <div class="links">
+            <a href="https://www.linkedin.com/in/inioluwa-atanda-72a782270/">Linkedln</a>
+        <a href="https://twitter.com/atanda_inioluwa">Twitter</a>
+        <a href="https://github.com/Eunini">Github</a>
+        </div><br>
+        <p style="font-size: 14px;">&copy;Techgirl-Inioluwa@Tech4dev</p>
+    </footer>
+</html>
